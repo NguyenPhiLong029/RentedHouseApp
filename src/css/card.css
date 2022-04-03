@@ -1,0 +1,11 @@
+.color-price {
+  color: #f96d01;
+}
+
+.type {
+  margin: 2px 0 0 0;
+}
+
+.form-select:focus {
+  box-shadow: none;
+}

@@ -43,6 +43,15 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(js|jsx?|tsx?)$/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            cacheDirectory: true
+          }
+        }
       }
     ]
   },
@@ -67,6 +76,7 @@ module.exports = {
       directory: path.join(__dirname, 'public')
     },
     // compress: true,
+    historyApiFallback: true,
     port: 8900,
     open: true
   }
